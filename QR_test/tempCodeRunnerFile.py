@@ -1,0 +1,1 @@
+read_qr_from_camera
