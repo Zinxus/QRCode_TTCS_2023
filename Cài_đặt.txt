@@ -1,0 +1,39 @@
+NỘI DUNG NGUYÊN CỨU
+Thực hiện việc tạo mã QR Code từ nội dung người dùng nhập vào và hiện mã QR Code, thực hiện lưu mã QR Code nếu người dùng muốn lưu.
+Đọc mã QR Code từ file người dùng cung cấp có chứa mã QR Code và hiện nội dung cho người dùng.
+Đọc mã QR Code thông qua camera nhận diện mã QR Code và hiện nội dung cho người dùng.
+Thực hiện điểm danh sinh viên bằng mã QR Code cá nhân từ file excel người dùng cung cấp với định dạng cho sẵn.
+
+1 Cài Visual Studio Code
+Để tài và cài đặt Visual Studio Code trên Window, bạn phải truy cập vào đường link sau đây:
+code.visualstudio.com. Sau đó chọn hệ điều hành Window.
+Sau khi tải Visual Studio Code, bạn thực hiện  cài đặt phần mềm.
+2 Cài extentions python
+Để tải extentions python bạn cần mở Visual Studio Code, sau đó mở Extention(Ctrl+Shift+X)
+tìm extention python và install
+3 Cài đặt môi trường python:
+Bước 1: Truy cập vào trang chủ của python
+https://www.python.org/
+Bước 2: Chọn phiên bản ở mục Downloads và chọn phiên bản mới nhất để download.
+Bước 3:Sau khi download hoàn tất. Chúng ta nhấn chọn chạy file đã tải về để tiến hành cài đặt
+Bước 4: Tick vào ô Add Python 3.12.1 (phiên bản mới nhất)to PATH và chọn Install Now
+Bước 5: Khi cửa sổ hiển thị Setup was successful là ta đã cài đặt thành công môi trường Python > Close
+4 Cài đặt các thư viện:
+Ta mở Command Prompt (CMD).
+•	Để mở Command Prompt bạn dùng tổ hợp phím Windows + R để mở hộp thoại Run
+•	Sau đó, gõ cmd > Enter để mở Command Prompt
+Trong cửa sổ Command Prompt, bạn gõ python > Enter để kiểm tra xem đã cài môi trường chưa và thực hiện cài thư viện .
+Các thư viện thường dùng ‘qrcode’, ‘pyzbar’, ‘opencv’, ‘tkinter’, ‘openpyxl’,'os', ‘Subprocess’…
+VD Cách cài đặt:
+Thêm thư viện ‘qrcode’. Trong cửa sổ Command Prompt, bạn gõ python –m pip install qrcode .
+Thêm thư viện ‘tkinter’. Trong cửa sổ Command Prompt, bạn gõ python –m pip install tk .
+Thêm thư viện  ‘opencv’. Trong cửa sổ Command Prompt, bạn gõ python –m pip install opencv.
+Chương trình QR Code:
+	Tạo chương trình có đuôi .py và nội dung giống với file BCTTCS_NguyenChiHieu_63134016.docx
+Với các file:
+	qr_interface.py Giao diện chương trình  chính 
+	create_qrcode.py module tạo mã QRcode dùng trong chương trình chính qr_interface.py
+	qr_file_reader.py module để đọc mã QR Code từ file mà người dùng cung cấp và trả về nội dung mã QR Code nếu tìm thấy
+	qr_camera_reader.py module để đọc mã QR Code từ Camera và trả về nội dung mã QR Code nếu tìm thấy
+	main.py Module Chứa chức năng điểm danh dùng để cho người dùng cung cấp file excel điểm danh với đã được định dạng sẵn và bật camera thực hiện điểm danh
+	decode.py module cho main.py được dùng để xử lý dử liệu từ camera thêm nội dung điểm danh vào file excel 
